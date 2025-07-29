@@ -166,49 +166,6 @@
 						</a>
 					</div>
 					<div class="detalhe">
-						<span><i class="fa-solid fa-coins"></i> Pedido Mínimo
-							<b>R$ 19,99</b></span>
-						<div>
-							<span><i class="fa-solid fa-motorcycle"></i> <b>30-50</b> min</span> • <span style="color: #077c22">Grátis</span>
-						</div>
-					</div>
-					<div class="detalhe" style="gap: 3px;">
-						<i class="fa fa-map-marker-alt" aria-hidden="true"></i><span id="localCidade">Local Desconhecido</span> -
-						<span id="localEstado">Local Desconhecido</span> • 1,6km de você
-					</div>
-					<div class="detalhe">
-						<i class="fa fa-star" aria-hidden="true"></i><b>4,9</b> (2.136 avaliações)
-					</div>
-						<div class="aberto">
-						<i class="fa-solid fa-circle btn-pisca"></i> 
-						<span id="status-loja">ABERTO</span> 
-						<i class="fa-regular fa-clock horario" id="icone-relogio" style="display: none;"></i> 
-						<span class="horario" id="horario-fechamento" style="display: none;"></span>
-					</div>
-					
-					<script>
-						function atualizarStatusLoja() {
-							const agora = new Date();
-							const horas = agora.getHours();
-							const statusLoja = document.getElementById("status-loja");
-							const iconeRelogio = document.getElementById("icone-relogio");
-							const horarioFechamento = document.getElementById("horario-fechamento");
-					
-							if (horas >= 0 && horas < 2) {
-								statusLoja.textContent = "ABERTO";
-								horarioFechamento.textContent = "até 02:00";
-								iconeRelogio.style.display = "inline";
-								horarioFechamento.style.display = "inline";
-							} else if (horas >= 8 && horas < 23) {
-								statusLoja.textContent = "ABERTO";
-								iconeRelogio.style.display = "none";
-								horarioFechamento.style.display = "none";
-							} else {
-								statusLoja.textContent = "ABERTO";
-								iconeRelogio.style.display = "none";
-								horarioFechamento.style.display = "none";
-							}
-						}
 					
 						atualizarStatusLoja();
 					</script>
